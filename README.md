@@ -1,2 +1,2 @@
 # mayankshekhar
-Creating my personal website using HTML, CSS, and JS
+My personal website created using HTML and CSS.
