@@ -1,8 +1,11 @@
-* {
+body {
 	font-size: 110%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
 }
 
 footer {
-	font-size: 14px;
+	font-size: 18px;
 	text-align: center;
 }
