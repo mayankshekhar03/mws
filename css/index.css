@@ -9,3 +9,7 @@ footer {
 	font-size: 18px;
 	text-align: center;
 }
+
+img {
+	display: inline-block;
+}
