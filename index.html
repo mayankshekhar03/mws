@@ -1,17 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+	a { color: red; }
+	body {
+		padding-left: 10px;
+	    font: 20px "Montserrat", sans-serif;
+	    line-height: 1.8;
+	    color: #f5f6f7;
+	}
+
+	p {font-size: 16px;}
+	.bg-1 { 
+    background-color: white;
+    color: black;
+	}
+	.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+	}
+
+	/* Add a gray color to all navbar links */
+	.navbar li a, .navbar .navbar-brand { 
+	    color: #d5d5d5 !important;
+	    padding-left: 25px;
+	}
+
+	/* On hover, the links will turn white */
+	.navbar-nav li a:hover {
+	    color: #fff !important;
+	}
+
+	/* The active link */
+	.navbar-nav li.active a {
+	    color: #fff !important;
+	    background-color:#29292c !important;
+	}
+
+	/* Remove border color from the collapsible button */
+	.navbar-default .navbar-toggle {
+	    border-color: transparent;
+	}
+
+	/* Dropdown */
+	.open .dropdown-toggle {
+	    color: #fff ;
+	    background-color: #555 !important;
+	}
+
+	/* Dropdown links */
+	.dropdown-menu li a {
+	    color: #000 !important;
+	}
+
+	/* On hover, the dropdown links will turn red */
+	.dropdown-menu li a:hover {
+	    background-color: red !important;
+	}
+	</style>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>Mayank Shekhar - Personal Website</title>
 </head>
 <body>
-    <div id="intro">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" href="#">Mayank Shekhar</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTACT
+	            <span class="caret"></span>
+	          </a>
+	          <ul class="dropdown-menu">
+	            <li><a href="https://twitter.com/mayankshekhar03">TWITTER</a></li>
+	            <li><a href="https://csforallblog.wordpress.com">CS FOR ALL</a></li>
+				<li><a href="mailto:mayankshekhar03@gmail.com">MAIL ME</a></li>
+				<li><a href="https://github.com/mayankshekhar03" target="blank">GITHUB</a></li>
+				<li><a href="https://lnked.in/may03" target="blank">LINKEDIN</a></li>
+				<li><a href="https://quora.com/mayank-shekhar-31" target="blank">QUORA</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<br>
+    <div class="container-fluid bg-1">
+    <div id="who">
 		<h1>Hello,</h1>
 		<h2>My name is Mayank Shekhar.</h2>
 		<p>I like learning, <code>coding</code>, and implementing.</p>
 	</div>
+	</div>
 
-	<div id="Interests">
+	<div class="container-fluid bg-1" id="what">
 		<h2>My Interests</h2>
 		<section id="coding"><p>I like coding. It is an integral part of my life. I am, currently, a full-time student and investing most of my time learning. The projects I have worked on till now are:</p>
 			<ol id="projects-list">
@@ -22,18 +124,9 @@
 		<p>My favourite programming language is Python and I am learning more advanced concepts of Computer Science using Python.</p>
 		</section>
 	</div>
-	<div class="contact">
+	<div class="container-fluid bg-1" id="where">
 		<h2>Contact</h2>
 		<p>Here's my <a href="https://1drv.ms/b/s!AlwV63GIcr-eliBr5o3iQVUpaGMg" target="blank">resume</a> if you are interested.</p>
-	</div><br>
-	<hr>
-	<footer>
-			<a href="mailto:mayankshekhar03@gmail.com">Mail me</a> &nbsp; | &nbsp;
-			<a href="https://github.com/mayankshekhar03" target="blank">Github</a> &nbsp; | &nbsp;
-			<a href="https://lnked.in/may03" target="blank">LinkedIn</a> &nbsp; | &nbsp;
-			<a href="https://quora.com/mayank-shekhar-31" target="blank">Quora</a>&nbsp; | &nbsp;
-			<a href="https://twitter.com/mayankshekhar03" target="blank">Twitter</a><br>
-			<small class="footer">&copy 2017 Mayank Shekhar</small>
-	</footer>
+	</div>
 </body>
 </html>
