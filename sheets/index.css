@@ -1,8 +1,4 @@
-* {
-	-webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+
 
 body {
 	background-image: url(../pics/background.jpg)
@@ -49,17 +45,16 @@ body {
 		text-shadow: 2px 4px 11px rgba(200, 255, 188, 1);
 	}
 	.content {
-		position: relative;
+		position: static;
 		max-width: 600px;
 		margin: 0 auto;
 		background-color: rgba(255, 0, 0, 0.4);
 		padding-top: 30px;
 		padding-bottom: 30px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 45px;
+		padding-right: 30px;
 		border: solid red 2px;
 		border-radius: 5px;
-		text-align: center;
 	}
 	.nav {
 		color: white;
