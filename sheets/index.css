@@ -4,7 +4,7 @@ body {
 	background-image: url(../pics/background.jpg)
 }
 
-@media screen and (min-width:721px) {
+@media screen and (min-width:722px) {
 	.header{
 		font-family: 'Russo One', sans-serif;
 		text-align: center;
@@ -38,7 +38,7 @@ body {
 }
 
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:721px) {
 	.header{
 		font-family: 'Russo One', sans-serif;
 		text-align: center;
