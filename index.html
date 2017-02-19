@@ -19,7 +19,19 @@
 		</ul>
 	</div>
 	<div class="data">
-			<h2>Hello,</h2>
+			<h2>Hello and 
+				<script type="text/javascript">datetoday = new Date();
+				timenow=datetoday.getTime();
+				datetoday.setTime(timenow);
+				thehour = datetoday.getHours();
+				if (thehour > 18) display = "Evening";
+				else if (thehour >12) display = "Afternoon";
+				else display = "Morning";
+				var greeting = ("Good " + display + "!");
+				document.write(greeting);
+				</script>
+
+			</h2>
 			<p>My name is Mayank Shekhar. I am a Computer Science &amp; Engineering undergraduate. I chose CS because the internal working of machines always fascinated me. I always wanted to build user-friendly and efficient sofwares and there isn't anything more interesting than coding for me.</p>
 	</div>
 	</div>
