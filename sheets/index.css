@@ -59,6 +59,7 @@
     #portfolio {
         text-align: center;
         clear: left;
+        clear: right;
         padding: 10px 10px 10px 10px;
         background-color: floralwhite;
         position: relative;
