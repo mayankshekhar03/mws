@@ -1,6 +1,9 @@
 
 
 @media screen and (min-width:769px) {
+    * {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 	body {
 		width: 720px;
 		margin: 0 auto;
@@ -10,6 +13,7 @@
 	#heading {
 		float: left;
         overflow: auto;
+        font-family: 'Indie Flower', cursive;
 	}
 	
 	ul {
@@ -61,9 +65,11 @@
         clear: left;
         clear: right;
         padding: 10px 10px 10px 10px;
-        background-color: floralwhite;
+        background-color: aliceblue;
         position: relative;
         overflow: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     figure {
@@ -120,6 +126,17 @@
         padding: 3px;
         border-radius: 7px;
     }
+    
+    @keyframes port {
+        from {background-color: bisque;}
+        to {background-color: coral;}
+    }
+    
+    figure:hover {
+        animation-name: port;
+        animation-duration: 3s; 
+    }
+    
 }
 
 
