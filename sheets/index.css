@@ -86,11 +86,11 @@
         border-radius: 5px;
         width: auto;
         box-shadow: 10px 10px 10px #888888;
+        transition: all .2s ease-in-out;
     }
     
     figure:hover {
-        animation-name: port;
-        animation-duration: 3s; 
+        transform: scale(1.1);
     }
     
     #skills {
@@ -192,18 +192,11 @@
         max-width: 270px;
         border-radius: 5px;
         box-shadow: 10px 10px 10px #888888;
+        transition: all .2s ease-in-out;
     }
     
     figure:hover {
-        animation-name: port;
-        animation-duration: 3s; 
-    }
-    
-    
-    
-    @keyframes port {
-        from {background-color: bisque;}
-        to {background-color: coral;}
+        transform: scale(1.1);
     }
     
     #skills {
