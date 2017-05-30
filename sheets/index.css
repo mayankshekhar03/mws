@@ -187,11 +187,12 @@
     
     a > figure {
         padding: 10px;
-        background-color: bisque;
+        background-color: #fff;
         margin: 20px auto;
-        max-width: 300px;
+        max-width: 270px;
         border-radius: 5px;
         box-shadow: 10px 10px 10px #888888;
+        border: 1px solid black;
     }
     
     figure:hover {
@@ -202,8 +203,8 @@
     
     
     @keyframes port {
-        from {background-color: bisque;}
-        to {background-color: coral;}
+        from {background-color: #fff;}
+        to {background-color: beige;}
     }
     
     #skills {
@@ -258,6 +259,7 @@
         top: 20px;
         right: 20px;
         box-shadow: 4px 4px 10px #888;
+        background-color: #000;
     }
 
     /* The container <div> - needed to position the dropdown content */
