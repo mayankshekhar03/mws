@@ -4,6 +4,10 @@
     * {
         font-family: 'Source Sans Pro', sans-serif;
     }
+    
+    .dropbtn {
+        display: none;
+    }
 	body {
 		max-width: 1000px;
 		margin: 0 auto;
@@ -242,4 +246,14 @@
         text-decoration: none;
         cursor: pointer;
     }
+    
+    .dropbtn{
+        width: auto;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        box-shadow: 4px 4px 10px #888;
+    }
+    
+    
 }
