@@ -187,12 +187,11 @@
     
     a > figure {
         padding: 10px;
-        background-color: #fff;
+        background-color: bisque;
         margin: 20px auto;
         max-width: 270px;
         border-radius: 5px;
         box-shadow: 10px 10px 10px #888888;
-        border: 1px solid black;
     }
     
     figure:hover {
@@ -203,8 +202,8 @@
     
     
     @keyframes port {
-        from {background-color: #fff;}
-        to {background-color: beige;}
+        from {background-color: bisque;}
+        to {background-color: coral;}
     }
     
     #skills {
