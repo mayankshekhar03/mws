@@ -141,11 +141,6 @@
         border-radius: 7px;
     }
     
-    @keyframes port {
-        from {background-color: bisque;}
-        to {background-color: coral;}
-    }
-    
 }
 
 
