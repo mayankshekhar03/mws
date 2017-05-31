@@ -1,6 +1,6 @@
 
 
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
     * {
         font-family: 'Source Sans Pro', sans-serif;
     }
@@ -65,12 +65,12 @@
         float: right;
         padding: 20px;
         margin-top: 4px;
+        display: none;
     }
     
     #portfolio {
         text-align: center;
-        clear: left;
-        clear: right;
+        clear: both;
         padding: 10px 10px 10px 10px;
         background-color: floralwhite;
         overflow: auto;
@@ -125,7 +125,7 @@
     }
     
     button {
-        width: 34.2%;
+        width: 34%;
         background-color: #ff8c1a;
         border: none;
         color: white;
