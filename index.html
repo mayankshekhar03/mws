@@ -1,150 +1,127 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-	<!-- meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	
-	<!--imports and stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Source+Sans+Pro" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="sheets/index.css">
-	<link rel="stylesheet" type="text/css" href="sheets/animate.css">
-    <title>Mayank Shekhar - Profile</title>
-    
-    <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        });
-</script>
-<script>
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-</script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--title-->
+    <title>Mayank Shekhar - Programmer | Web Developer</title>
+    <!--jQuery imported-->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--JavaScript file imported-->
+    <script src = "magic/index.js"></script>
+    <!--Awesomeness imported-->
+    <script src = "https://use.fontawesome.com/2b9a53c46f.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!--Importing my signature style-->
+    <link rel = "stylesheet" type = "text/css" href = "magic/index.css">
+    <link rel = "stylesheet" type = "text/css" href = "magic/animate.css">
 </head>
+
 <body>
-	<h1 id="heading">Mayank Shekhar</h1>
-	<!--code for navigation menu begin-->
-    <button onclick="myFunction()" class="dropbtn">Jump</button>
-    <div class="dropdown">
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <div id='intro'>
+        <img src='magic/dp.png' alt='Mayank Shekhar'>
+        <div id='name'>
+            <h1>Mayank Shekhar</h1>
+            <nav>
+                <button id='project'><i class="fa fa-laptop" aria-hidden="true"></i> Projects</button>
+                <!--<button id='inf'><i class="fa fa-info" aria-hidden="true"></i> Info</button>-->
+                <button id='contac'><i class="fa fa-envelope-o" aria-hidden="true"></i> Get in touch</button>
+            </nav>
+        </div>
     </div>
     
-	<ul>
-		<li><a href="#portfolio">Portfolio</a></li>
-		<li><a href="#skills">Skills</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-	<!--code for navigation menu end-->
-	
-	<!--about section begin-->
-	<div id="about">
-	<p>Hello,<br><br>My name is Mayank Shekhar. I am a Computer Science &amp; Engineering undergraduate. I try to build user-friendly and efficient programs. For me, there isn't anything more interesting 
-	than designing and coding. I spend most of my time learning. I do just one thing, thing that I love to do.</p>
-	</div>
-    <img src="pics/dp.png" alt="mayank display picture" class="dp" height="200" width="200">
-	<!--about section end-->
+    <div class='container' id='projects'>
+        <div class='sidebar'>
+            <button class='back'>&lt; </button>
+            <h2>Projects</h2>
+            <button id='menu'><i class="fa fa-bars" aria-hidden="true"></i> List</button> 
+            <div class='list' style='text-align: left'>
+                <div class='P1' id='p1'>Calcy</div>
+                <div class='P2' id='p2'>Pomodoro Clock</div>
+                <div class='P3' id='p3'>Simon Game</div>
+                <div class='P4' id='p4'>Tic Tac Toe</div>
+                <div class='P5' id='p5'>Random Quotes Machine</div>
+                <div class='P6' id='p6'>Twitch Streamers</div>
+                <div class='P7' id='p7'>Weatherly</div>
+                <div class='P8' id='p8'>Wiki Search</div>
+                <div class='P9' id='p9'>WordOut</div>
+            </div> <hr>
+        </div>
+        <div class='details'>
+            <div class='P1'>
+                <h2>Calcy</h2> <a target='_blank' href='http://mayankshekhar03.github.io/calcy'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>Built a calculator which supports chain input.</p>
+                <div style='text-align: center'>
+                    <img src='magic/pics/calcy.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P2'>
+                <h2>Pomodoro Clock</h2> <a target='_blank' href='http://mayankshekhar03.github.io/pomodo'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>Keep track of your activities. Be time bound.</p>
+                <div style='text-align: center;'>
+                    <img src='magic/pics/pomodo.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P3'>
+                <h2>Simon</h2> <a target='_blank' href='http://mayankshekhar03.github.io/simon'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>A memory game.</p>
+                <div style='text-align: center'>
+                    <img src='magic/pics/simon.png' alt='screenshot'  width='500'>
+                </div>
+            </div>
+            <div class='P4'>
+                <h2>Tic Tac Toe</h2> <a target='_blank' href='http://mayankshekhar03.github.io/tic-tac-toe'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <div style='text-align: center'>
+                    <img src='magic/pics/tic.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P5'>
+                <h2>Random Quotes Machine</h2> <a target='_blank' href='http://mayankshekhar03.github.io/random-pro-quotes'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>Quotes machine which displays random quotes and gives user the ability to share on WhatsApp and Twitter.</p>
+                <div style='text-align: center;'>
+                    <img src='magic/pics/quotes.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P6'>
+                <h2>Twitch Streamers</h2> <a target='_blank' href='http://mayankshekhar03.github.io/twitch'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                
+                <div style='text-align: center'>
+                    <img src='magic/pics/twitch.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P7'>
+                <h2>Weatherly</h2> <a target='_blank' href='http://mayankshekhar03.github.io/weatherly'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>Shows weather ☀️ at the current location.</p>
+                <div style='text-align: center'>
+                    <img src='magic/pics/weatherly.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P8'>
+                <h2>Wiki Search</h2> <a target='_blank' href='http://mayankshekhar03.github.io/wiki-search'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>Simple Wikipedia search web app.</p>
+                <div style='text-align: center'>
+                    <img src='magic/pics/wiki.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+            <div class='P9'>
+                <h2>WordOut</h2> <a target='_blank' href='http://wordout.000webhostapp.com'><button class='link'><i class="fa fa-link" aria-hidden="true"></i> Project Link</button></a>
+                <p>Created WordOut website as my third year project. A broadcast can be created with an unique id and notices can be shared with the concerned people by sharing that id with them. Repository is on: https://github.com/mayankshekhar03/wordout</p>
+                <div style='text-align: center'>
+                    <img src='magic/pics/wordout.png' alt='screenshot' width='500'>
+                </div>
+            </div>
+        </div>
+    </div>
     
-	<!--portfolio section begin-->
-	<div id="portfolio">
-	<h2>Portfolio</h2>
-    <a href="https://wordout.000webhostapp.com" target="_blank"><figure>
-    <img src="pics/Screenshot%20(9).png" alt="project1" width="270">
-    <figcaption>Project WordOut</figcaption>
-    </figure></a>
-    <a href="https://codepen.io/mayankshekhar03/full/bWYNEV/" target="_blank"><figure>
-    <img src="pics/Screenshot%20(11).png" alt="project1" width="270">
-    <figcaption>APJ Abdul Kalam Tribute Page.</figcaption>
-    </figure></a>
-    <a href="https://mayankshekhar03.github.io/my-first-website" target="_blank"><figure>
-    <img src="pics/capture.png" alt="project1" width="270" height="130">
-    <figcaption>My first website.</figcaption>
-    </figure></a>
-    <a href="https://mayankshekhar03.github.io/random-pro-quotes" target="_blank"><figure>
-    <img src="pics/Screenshot (16).png" alt="project1" width="270">
-    <figcaption>Random Quotes</figcaption>
-    </figure></a>
-    <a href="https://mayankshekhar03.github.io/weatherly" target="_blank"><figure>
-    <img src="pics/Screenshot (17).png" alt="project1" width="270">
-    <figcaption>Weatherly</figcaption>
-    </figure></a>
-    <a href="https://mayankshekhar03.github.io/wiki-search" target="_blank"><figure>
-    <img src="pics/wiki.png" alt="project1" width="270">
-    <figcaption>Wikipedia Search</figcaption>
-    </figure></a>
-	</div>
-	<!--portfolio section end-->
-	
-	<!--skills section begin-->
-	<div id="skills">
-	<h2>Skills</h2>
-        <h3>Abstract Skills</h3>
-        <span><img src="pics/brush.png" style="height: 1em;"> Designing</span> <span><img src="pics/code.png" style="height: 1em;"> Coding</span> <span><img src="pics/object.png" style="height: 1em;"> Object-Orient Programming</span> <span><img src="pics/www.png" style="height: 1em;"> Web Development</span>
-        <h3>Tools and Frameworks</h3><span><img src="pics/tex.png" style="height: 1em;"> LATEX</span> <span><img src="pics/git.png" style="height: 1em;"> Git and Github</span> <span><img src="pics/sql.png" style="height: 1em;"> MySQL</span>
-        <h3>Programming Languages</h3>
-        <span><img src="pics/cpp.png" style="height: 1em;"> C++</span> <span><img src="pics/py.png" style="height: 1em;"> Python</span> <span><img src="pics/java.png" style="height: 1em;"> Java</span> <span><img src="pics/js.png" style="height: 1em;"> JavaScript</span>
-        <h3>Office</h3>
-        <span><img src="pics/of.png" style="height: 1em;"> Microsoft Office</span> <span><img src="pics/po.png" style="height: 1em;"> Powerpoint</span> <span><img src="pics/ex.png" style="height: 1em;"> Excel</span>
-	</div>
-	<!--skills section end-->
-	
-	<!--contact form begin-->
-	<div id="contact">
-	<h2>Contact</h2>
-	<form action="mailto: mayankshekhar03@gmail.com">
-	<input type="email" placeholder="Enter your E-mail address" required>
-	<button type="submit">Send an E-mail to Mayank</button>
-	</form><hr>
-    <a href="http://lnked.in/may03" target="_blank"><img src="pics/my-icons-collection/svg/linkedin.png" style="height: 1.8em;"></a>
-     <a href="https://www.quora.com/profile/Mayank-Shekhar-31" target="_blank"><img src="pics/my-icons-collection/svg/quora.svg" style="height: 1.8em;"></a>
-     <a href="https://twitter.com/mayankshekhar03" target="_blank"><img src="pics/my-icons-collection/svg/twitter.svg" style="height: 1.8em;"></a>
-     <a href="https://plus.google.com/u/0/115805799698774612470" target="_blank"><img src="pics/my-icons-collection/svg/google.svg" style="height: 1.8em;"></a>
-    <a href="https://github.com/mayankshekhar03/resume/raw/master/main.pdf" style="float: right; padding-top: 5px; color: white;">Download My Resume</a>
-	</div>
-	<!--contact form end-->
+    <div class='container' id='contact' style='text-align: center'>
+        <button class='back'>&lt; </button>
+        <h2>Contact</h2>
+        <div style='margin-top: 130px; line-height: 2;'>
+            <p>I am on 
+				<a href="http://lnked.in/may03" target="_blank" style='color: blue'><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>.<br> I have a 
+				<a href="https://github.com/mayankshekhar03/resume/raw/master/mayank_shekhar_resume.pdf" target="_blank" style='color: magenta'><i class="fa fa-file-text" aria-hidden="true"></i> resume</a>.<br> I am highly active on 
+				<a href="https://www.quora.com/profile/Mayank-Shekhar-31" target="_blank" style="color: maroon"><i class="fa fa-quora" aria-hidden="true"></i> Quora</a> and a little active on 
+				<a href="https://twitter.com/mayankshekhar03" target="_blank" style="color: cornflowerblue"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>.<br> You may contact me via <a href="mailto:mayankshekhar03@gmail.com" style="color: green"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</a>.
+        </div>
+    </div>
 </body>
 </html>
