@@ -27,6 +27,13 @@ $(document).ready(function(){
         $('#contact').show();
     });
     
+    $('#inf').click(function(){
+        $('#intro').hide();
+        $('#info').removeClass('animated bounceOutUp');
+        $('#info').addClass('animated bounceInDown');
+        $('#info').show();
+    });
+    
     $('.back').click(function(){
         $('#intro').show();
         //$('.container').hide();

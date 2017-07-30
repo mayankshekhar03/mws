@@ -45,6 +45,7 @@
         position: absolute;
         top: 80px;
         left: 10px;
+        width: 300px;
     }
 
     nav > button {
@@ -149,7 +150,7 @@
     .container > button {
         position: absolute;
         left: 20px;
-        top: 40px;
+        top: 36px;
         border: none;
         background-color: white;
         font-size: 1.9em;
@@ -158,6 +159,10 @@
     .container > button:hover {
         color: red;
         cursor: pointer;
+    }
+    
+    #info > h2 {
+        margin-left: 30px;
     }
 }
 
@@ -281,6 +286,19 @@
         border: none;
         font-size: 1.4em;
         background-color: white;
+    }
+    
+    #info > button {
+        position: absolute;
+        left: 30px;
+        top: 46px;
+        border: none;
+        font-size: 1.4em;
+        background-color: white;
+    }
+    
+    #info > h2 {
+        margin-left: 30px;
     }
     
     #contact > div {
