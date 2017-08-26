@@ -3,8 +3,8 @@ $(document).ready(function(){
     
     $('#project').click(function(){
         $('#intro').hide();
-        $('#projects').removeClass('animated bounceOutUp');
-        $('#projects').addClass('animated bounceInDown');
+        $('#projects').removeClass('animated fadeOut');
+        $('#projects').addClass('animated fadeIn');
         $('#projects').show();
         $('#p1').siblings().removeClass('selected');
         $('#p1').addClass('selected');
@@ -22,23 +22,23 @@ $(document).ready(function(){
     
     $('#contac').click(function(){
         $('#intro').hide();
-        $('#contact').removeClass('animated bounceOutUp');
-        $('#contact').addClass('animated bounceInDown');
+        $('#contact').removeClass('animated fadeOut');
+        $('#contact').addClass('animated fadeIn');
         $('#contact').show();
     });
     
     $('#inf').click(function(){
         $('#intro').hide();
-        $('#info').removeClass('animated bounceOutUp');
-        $('#info').addClass('animated bounceInDown');
+        $('#info').removeClass('animated fadeOut');
+        $('#info').addClass('animated fadeIn');
         $('#info').show();
     });
     
     $('.back').click(function(){
         $('#intro').show();
         //$('.container').hide();
-        $('.container').removeClass('animated bounceInDown');
-        $('.container').addClass('animated bounceOutUp');
+        $('.container').removeClass('animated fadeIn');
+        $('.container').addClass('animated fadeOut');
         setTimeout(function(){
             $('.container').hide();
         }, 1000);
