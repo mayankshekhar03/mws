@@ -35,7 +35,7 @@ $(document).ready(function(){
     });
     
     $('.back').click(function(){
-        $('#intro').show();
+  	$('#intro').show();
         //$('.container').hide();
         $('.container').removeClass('animated fadeIn');
         $('.container').addClass('animated fadeOut');

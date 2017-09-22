@@ -209,8 +209,12 @@
     .container {
         padding: 20px;
         background-color: white;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+        left: 0px;
+        height: inherit;
         z-index: 1;
-        border-radius: 1em;
     }
     
     .sidebar {
@@ -288,12 +292,16 @@
         font-size: 1.4em;
         background-color: white;
     }
+
+    #info {
+	margin-top: 4em;
+    }
     
     #info > button {
-        position: absolute;
-        left: 30px;
-        top: 46px;
+	position: absolute;
         border: none;
+	margin-left: 0px;
+	margin-top: 20px;
         font-size: 1.4em;
         background-color: white;
     }
