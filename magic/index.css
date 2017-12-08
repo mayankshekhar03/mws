@@ -19,7 +19,6 @@
         position:fixed;
         top: 50%;
         left: 50%;
-        width:30em;
         margin-top: -9em; /*set to a negative number 1/2 of your height*/
         margin-left: -16em; /*set to a negative number 1/2 of your width*/
         border-radius: 1em;
@@ -49,7 +48,7 @@
     }
 
     nav > button {
-        padding: 8px;
+        padding: 7px;
         border: none;
         border-radius: 1em;
         font-family: 'Montserrat', sans-serif;
